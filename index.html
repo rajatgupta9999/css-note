@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page 123</title>
+    <title>Css Notes</title>
 </head>
 
 <body>
@@ -813,5 +813,103 @@
             </li>
         </ul>
     </ol><hr>
+    <h2>Font</h2>
+    <p>In CSS, font-related properties are used to control the appearance of text, including its typeface, size, weight, style, and more. Below is a comprehensive guide to the most commonly used font properties:</p>
+    <ol>
+        <li><b><u>font-family</u></b>:-</li>
+        -Specifies the typeface for text. <br>
+        -The font-family property lists one or more font families, separated by commas. Each font family is specified as either a < family-name> or a < generic-name> value.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>< family-name></u></b>:-</li>
+                    - The name of a font family. <br>
+                    - use one or more family names separated by commas. <br>
+                    - For example, "Arial", "Times New Roman", etc.
+                    <li><b><u>< generic-name></u></b>:-</li>
+                    -These are broad categories that browsers use as fallbacks:<br>
+                    -This have mainy 5 fonts family <br>
+                    -serif, sans-serif, monospace, cursive, fantasy. <br>
+            </ul>
+        </li>
+        <li><b><u>font-size</u></b>:-</li>
+        -Sets the size of the text
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>Absolute units</u></b>:-</li>
+                    px, pt, in, cm, mm
+
+                    <li><b><u>Relative units</u></b>:-</li>
+                    em, rem, %, vh, vw
+            </ul>
+        </li>
+        <li><b><u>font-weight</u></b>:-</li>
+        -Controls the thickness of the text.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>Keywords</u></b>:-</li>
+                    normal, bold, bolder, lighter
+                    <li><b><u>Numeric</u></b>:-</li>
+                    100, 200, ..., 900 (400 = normal, 700 = bold)
+            </ul>
+        </li>
+        <li><b><u>font-stylet</u></b>:-</li>
+        -Sets the style of the text (e.g., italic).
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>normal</u></b>:-</li>
+                    Default style
+                    <li><b><u>italic</u></b>:-</li>
+                    Italic text.
+                    <li><b><u>oblique</u></b>:-</li>
+                    Slanted text (similar to italic).
+            </ul>
+        </li>
+        <li><b><u>font-variant</u></b>:-</li>
+        -Controls small-caps or normal text.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>normal</u></b>:-</li>
+                    Default.
+                    <li><b><u>small-caps</u></b>:-</li>
+                    Displays text in small capitals.
+            </ul>
+        </li>
+        <li><b><u>line-height</u></b>:-</li>
+        -Sets the height of a line of text.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>Unitless number</u></b>:-</li>
+                    Multiplies the font size (e.g., 1.5).
+                    <li><b><u>Absolute units</u></b>:-</li>
+                    px, em, rem
+            </ul>
+        </li> 
+        <li><b><u>font (Shorthand Property)</u></b>:-</li>
+        -Combines multiple font properties into one declaration.
+        <li><b><u> @font-face (Custom Fonts)</u></b>:-</li>
+        -Allows you to use custom fonts not installed on the user's system.
+        <li><b><u>font-variant-emoji</u></b>:-</li>
+        -The font-variant-emoji property in CSS is used to control the rendering of emoji characters in text.
+        -It allows you to specify how emojis should be displayed, such as using a text-style or emoji-style representation.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>normal (default):</u></b>:-</li>
+                    Emojis are displayed in their default style (usually colorful and graphical).
+                    <li><b><u>text</u></b>:-</li>
+                    Emojis are displayed in a text-style representation (monochrome and simpler).
+                    <li><b><u>emoji</u></b>:-</li>
+                    Forces emojis to be displayed in their colorful, graphical style.
+                    <li><b><u>unicode</u></b>:-</li>
+                    Displays emojis using their Unicode code points (textual representation).
+            </ul>
+         </li>
+     </ol>
 </body>
 </html>
