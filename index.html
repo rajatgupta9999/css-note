@@ -1,0 +1,817 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 123</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin: 0 auto;"><u>CSS Notes</u></h1>
+    <h2><u>CSS</u></h2>
+    <p>
+    <ul>
+        <li>Cascading Style Sheet</li>
+        <li>It is a language that is used to describe the style of a document written in HTML</li>
+    </ul>
+    </p>
+    <hr>
+    <h2><u>Types of CSS</u></h2>
+
+    <p>
+    <ol>
+        <div>
+            <li>
+                <h3><u></u>Inline CSS</h3>
+            </li>
+            <ul type="disc">
+                <li>Styles directly within the HTML element using the style attribute</li>
+                <li>Used to apply styles to individual elements</li>
+                <li><b>Pros:</b>
+                    <ul type="circle">
+                        <li>High specificity (overrides other styles).</li>
+                        <li>Useful for testing or quick fixes.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Cons:</b>
+                    <ul type="circle">
+                        <li>Hard to maintain and reuse.</li>
+                        <li>Mixes content with presentation (not recommended for large projects).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <li><b>Internal CSS</b>
+                <ul type="disc">
+                    <li>Styles are defined within a style tag in the head section of an HTML document.</li>
+                    <li>Use Case: Styling a single HTML page.</li>
+                    <li><b>Pros:</b>
+                        <ul type="circle">
+                            <li>Keeps styles separate from HTML content..</li>
+                            <li>Useful for small projects or single-page websites.</li>
+                        </ul>
+                    </li>
+                    <li><b>Cons:</b>
+                        <ul type="circle">
+                            <li>Not reusable across multiple pages.
+
+                            </li>
+                            <li>Increases page load time for larger styles</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+        </div>
+        <div>
+            <li><b>External CSS</b>
+                <ul type="disc">
+                    <li>Styles are written in a separate .css file and linked to the HTML document using the link tag.
+                    </li>
+                    <li>Use Case: Styling multiple pages in a website.</li>
+                    <li><b>Pros:</b>
+                        <ul type="circle">
+                            <li>Reusable across multiple pages.</li>
+                            <li>Improves maintainability and separation of concerns.</li>
+                            <li>Reduces page load time (cached by the browser).</li>
+                        </ul>
+                    </li>
+                    <li><b>Cons:</b>
+                        <ul type="circle">
+                            <li>Requires an additional HTTP request to load the CSS file.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </ol>
+    </p>
+    <hr>
+    <p>
+    <h2>Link of CSS file in html</h2>
+    < link rel="stylesheet" href="Path"><br>
+        rel= Stands For Relationship between the files you link with the html file.<br>
+        href= Stands For Hyper Reference,Path Of the file.<br>
+        - In css we link the file for styling purposes. so we use stylesheet
+        </p><hr>
+        <p>
+            <h2>Basic Syntax</h2>
+            Selector {
+                Property: Value;
+            } <br>
+            - Selector is used to select the element you want to style.<br>
+            - Property is the style property you want to apply.<br> 
+            - Value is the value of the property. <br><hr>
+
+        </p>
+        <p>
+            <h2>Color Property</h2>
+            - used to set the color of foreground <br>
+            - color : red <br>
+        </p><hr>
+        <p>
+            <h2>Background Property</h2>
+            - used to set the color of background <br>
+            - background-color : red ;<br>
+        </p><hr>
+        <p>
+            <h2>Color System</h2>
+            <ol>
+            <li><b>RGB (Red,Green,Blue)</b><br></li>
+            - used to assign the value of color property By using RGB <br>
+           <u>ex</u>:- color:rgb(255,0,0) Red <br>
+            - color:rgb(0,255,0) Green <br>
+            - color:rgb(0,0,255) Blue <br>
+            <li><b>HEX (Hexadecimal)</b><br></li>
+            - used to assign the value of color property by using Hexadecimal (#color code) <br>
+            <u>ex</u>:-color:#FF0000 Red <br>
+            - color:#00FF00 Green <br>
+            - color:#0000FF Blue <br>
+            </ol>
+        </p><hr>
+        <h2>Selectors</h2>
+    <ol>
+        <li><b><u>Universal Selector</u></b>:- <br>
+            - These are the most commonly used selectors. <br>
+            <p>
+            <ol>
+                <li><b><u>Element Selector</b></u> :-</li>
+                - Selects all elements of the specified type.<br>
+                <b>ex:-</b> p{Color:Blue;} <br>
+                .This selects all < p> element and make their color blue <br>
+                    .
+                    <li><b><u>Class Selector</b></u> :-</li>
+                    - Selects all elements with the specified class.<br>
+                    <b>ex:-</b> .class{Color:Blue;} <br>
+                    .This selects all elements with the class name "class" and make their color blue <br>
+                    .
+                    <li><b><u>Id Selector</b></u> :-</li>
+                    - Selects a single element with the specified id attribute<br>
+                    .
+                    <b>ex:-</b> #id{Color:Blue;} <br>
+                    .This selects the element with the id "id" and make their color blue <br>
+                    .
+                    <li><b><u>Universal Selector</b></u> :-</li>
+                    - Selects all elements on the page.<br>
+                    <b>ex:-</b> *{Color:Blue;} <br>
+                    .This selects all elements on the page and make their color blue <br>
+                    .
+            </ol>
+            </p>
+        </li>
+        <li><b><u>Combinators</u></b>:- <br>
+            - These are used to select elements based on their relationship to other elements.<br>
+            - Combinators allows you to combine multiple selectors to target specific relationship between elements.<br>
+            <p>
+            <ol>
+                <li><b><u>Descendant Selector</b></u> :-</li>
+                - Selects all elements that are descendants of the specified element.<br>
+                <b>ex:-</b> div p{Color:Blue;} <br>
+                .This selects all < p> elements that are descendants of < div> elements and make their color blue <br>
+                        .
+                        <li><b><u>Child Selector</b></u> :-</li>
+                        - Selects all elements that are direct children of the specified element.<br>
+                        <b>ex:-</b> ui > li {Color:Blue;} <br>
+                        .This selects all < li> elements that are direct children of < ui> elements and make their color
+                                blue <br>
+                                .
+                                <li><b><u>Adjacent Sibling Selector</b></u> :-</li>
+                                - selects an element that is immediately preceded by the specified element.<br>
+                                - Selects all elements that are adjacent siblings of the specified element.<br>
+                                <b>ex:-</b> h1 + p {Color:Blue;} <br>
+                                .This selects all < p> elements that comes immediately after an < h1> <br>
+                                        .
+                                        <li><b><u>General Sibling Selector</b></u> :-</li>
+                                        - Selects all elements that are siblings of the specified element.<br>
+                                        <b>ex:-</b> p ~ p {Color:Blue;} <br>
+                                        .This selects all < p> elements that are siblings of < p> elements and make
+                                                their color blue <br>
+                                                </p>
+            </ol>
+        </li>
+        <li><b><u>Attribute selector</u></b>:- <br>
+            - These are used to select elements based on their relationship to other elements.<br>
+            - These selectors target element based on their attributes <br>
+            <p>
+            <ol>
+                <li><b><u>Attribute Presence</b></u> :-</li>
+                - Selects a elements with the specified attribute.<br>
+                <b>ex:-</b> a[target] {Color:Blue;} <br>
+                .This selects all < a> elements with a "target" attribute and make their color blue <br>
+                    .
+                    <li><b><u>Attribute Value</u></b> :-</li>
+                    - Selects a elements with the specified attribute value.<br>
+                    <b>ex:-</b> a[target=_blank] {Color:Blue;} <br>
+                    .This selects all < a> elements with a "target" attribute value "_blank" and make their color blue
+                        <br>
+                        .
+                        <li><b><u>Attribute contains</u></b> :-</li>
+                        Selects element whose attribute value contains the specified substring .<br>
+                        <b>ex:-</b> a[href*="google"] {Color:Blue;} <br>
+                        .This selects all < a> elements whose attribute value contains "google" and make their color
+                            blue <br>
+                            .
+                            <li><b><u>Attribute Starts With</u></b> :-</li>
+                            Selects element whose attribute value starts with the specified value.<br>
+                            <b>ex:-</b> a[href^="https://"] {Color:Blue;} <br>
+                            .This selects all < a> elements whose attribute value starts with "https://" and make their
+                                color blue <br>
+                                .
+                                <li><b><u>Attribute Ends With</u></b> :-</li>
+                                Selects element whose attribute value ends with the specified value.<br>
+                                <b>ex:-</b> a[href$=".com"] {Color:Blue;} <br>
+                                .This selects all < a> elements whose attribute value ends with ".com" and make their
+                                    color blue <br>
+                                    </p>
+        </li>
+    </ol>
+    <li><b><u>Pseudo classes</u></b>:- <br>
+        - Pseudo classes are are used to target specific elements based on their position within a parent container.<br>
+        <p>
+        <ol>
+            <li><b><u>Hover</b></u> :-</li>
+            - Selects the element when it is hovered over.<br>
+            <b>ex:-</b> a:hover {Color:Blue;} <br>
+            .This selects all < a> elements that are hovered over and make their color blue <br>
+                .
+                <li><b><u>Focus</b></u> :-</li>
+                - Selects the element when it is focused(eg, via keyboard navigation).<br>
+                <b>ex:-</b> input:focus {Color:Blue;} <br>
+                .This selects all < input> elements that are focused and make their color blue <br>
+                    .
+                    <li><b><u>First child</b></u> :-</li>
+                    - Selects the first child element of the parent element.<br>
+                    <b>ex:-</b> ul li:first-child {Color:Blue;} <br>
+                    .This selects all < li> elements that are first child of < ul> elements and make their color blue
+                            <br>
+                            .
+                            <li><b><u>Last child</b></u> :-</li>
+                            - Selects the last child element of the parent element.<br>
+                            <b>ex:-</b> ul li:last-child {Color:Blue;} <br>
+                            .This selects all < li> elements that are last child of < ul> elements and make their color
+                                    blue <br>
+                                    .
+                                    <li><b><u>nth child(x)</b></u> :-</li>
+                                    - Selects the x child element of the parent element.<br>
+                                    <b>ex:-</b> ul li:nth-child(3) {Color:Blue;} <br>
+                                    .This selects all < li> elements that are the third child of < ul> elements and make
+                                            their color blue <br>
+                                            .
+                                            </p>
+                                            </ol>
+            <li><b><u>Pseudo element</u></b>:- <br>
+                - Pseudo elements are used to target specific parts of an element.<br>
+                <p>
+                <ol>
+                    <li><b><u>Before</b></u> :-</li>
+                    - Selects the element before the specified element.<br>
+                    <b>ex:-</b> a::before {Color:Blue;} <br>
+                    .This selects all < a > elements before the < a > elements and make their color blue <br>
+                        .
+                        <li><b><u>After</b></u> :-</li>
+                        - Selects the element after the specified element.<br>
+                        <b>ex:-</b> a::after {Color:Blue;} <br>
+                        .This selects all < a > elements after the < a > elements and make their color blue <br>
+                            .
+                        <li><b><u>First line</b></u> :-</li>
+                        - Selects the first line of the element.<br>
+                        <b>ex:-</b> p::first-line {Color:Blue;} <br>
+                        .This selects all  < p > elements first line and make their color blue <br>
+                        .
+                        <li><b><u>First letter</b></u> :-</li>
+                        - Selects the first letter of the element.<br>
+                        <b>ex:-</b> p::first-letter {Color:Blue;} <br>
+                        .This selects all  < p > elements first letter and make their color blue <br>
+                        .
+                         </p>
+                         </ol>
+                         <li><b><u>Grouping selector</u></b>:- <br>
+                            - Grouping selectors are used to select multiple elements at once.<br>
+                            - you Can group multiple selector to apply the same style <br>
+                            <b>ex:-</b> h1,h2,h3 {Color:Blue;}
+                            <p>This selects all < h1 >, < h2 >, and < h3 > elements and make their color blue
+                            </p>
+        </ol><hr>
+        <h2>Css priority [sepcificity]</h2>
+        <p>
+            - specificity determine which css rule is applied when multiple rules match the same element.<br>
+            - The order of specificity is <b>Highest to lowest</b>
+            <ol>
+                <li><b>Inline styles (Style="--")</b></li>
+                <li><b>ID Selector(#id)</b></li>
+                <li><b>Class Selector(.class)</b></li>
+                - attribute Selector <br>
+                - pseudo classes
+                <li><b>Element slector(p,div)</b></li>
+                - pseudo elements (::before).
+            </ol>
+        </p><hr>
+        <h2>Use of id class and name in css</h2>
+        <ol>
+            <li><b>Id</b>:-</li>
+            - id is used to select a single element in the document.<br>
+            - id is unique in the document.<br>
+            -<b>syntax:-</b>id="unique name"<br>
+            -<b>Css Sector</b> :-#idname{property:value;}<br>
+            <li><b>Class</b>:-</li>
+            - class is used to select multiple elements in the document.<br>
+            - class is not unique in the document,it can be used multiple time.<br>
+            -<b>syntax:-</b>class="class name"<br>
+            -<b>Css Sector</b> :- .classname{property:value;}<br>
+            <li><b>Name</b>:-</li>
+            - Primarly used for form element to identifying them when submitting data <br>
+            -<b>syntax:-</b>name="name"<br>
+            -<b>Css Sector:-</b>Not used in css it is used in java script for form validation <br>
+        </ol><hr>
+        <h2>Text Properties</h2>
+    - In css text properties are use to style and control the appearance of text content
+    <ol>
+        <li><b><u>text align</u></b>:-</li>
+        -The text-align property in CSS is used to control the horizontal alignment of text (or inline elements) within a block-level container. It is commonly used to align text to the left, right, center, or justify it. <br>
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>start</u></b>:-</li>
+                    - Aligns text to the start of the container (left in LTR languages, right in RTL languages). <br>
+                    <li><b><u>end</u></b>:-</li>
+                    Aligns text to the end of the container (right in LTR languages, left in RTL languages). <br>
+                    <li><b><u>left</u></b>:-</li>
+                    Aligns text to the left. <br>
+                    <li><b><u>right</u></b>:-</li>Aligns text to the right. <br>
+                    <li><b><u>center</u></b>:-</li> Centers text horizontally. <br>
+                    <li><b><u>justify</u></b>:-</li>
+                    Stretches text to fill the entire width of the container, creating even spacing between words.
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-align-last</u></b>:-</li>
+        -The text-align-last CSS property determines how the last line of a block or a line (before a forced line break) is aligned. It is useful for controlling the alignment of the final line in justified text or paragraphs. <br>
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>auto</u></b>:-</li>
+                    - The last line aligns according to the value of text-align, except when text-align is justify (in which case it behaves like start).<br>
+                    <li><b><u>left</u></b>:-</li>
+                    Aligns the last line to the left.<br>
+                    <li><b><u>right</u></b>:-</li>
+                    Aligns the last line to the right. <br>
+                    <li><b><u>center</u></b>:-</li>Centers the last line.<br>
+                    <li><b><u>start</u></b>:-</li> Aligns to the start of the text direction (left in LTR languages, right in RTL). <br>
+                    <li><b><u>end</u></b>:-</li>
+                    Aligns to the end of the text direction (right in LTR languages, left in RTL).
+                    <li><b><u>justify</u></b>:-</li>
+                    Stretches the text to fill the container width (like justified text).
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-anchor</u></b>:-</li>
+        -The text-anchor attribute is used in SVG (Scalable Vector Graphics) to control the alignment of text relative to its anchor point. It determines how text is positioned horizontally relative to its x and y coordinates.
+
+        Syntax <br>
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>start (default)</u></b>:-</li>
+                    - The text is aligned so that the beginning of the text is at the anchor point (x, y). <br>
+                    <li><b><u>middle</u></b>:-</li>
+                    The text is centered around the anchor point. <br>
+                    <li><b><u>end</u></b>:-</li>
+                    The text is aligned so that the end of the text is at the anchor point. <br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-combine-upright</u></b>:-</li>
+        -The text-combine-upright CSS property is used to combine multiple characters into the space of a single character, primarily for vertical writing modes (e.g., in East Asian languages like Japanese, Chinese, or Korean). This is often used for rendering tate-chu-yoko (縦中横), where horizontal text is displayed within vertical text.<br>
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>none</u></b>:-</li>
+                    - No character combining is applied. <br>
+                    <li><b><u>all</u></b>:-</li>
+                    Combines all characters within the element into the space of a single character. <br>
+                    <li><b><u>digits < integer>?</u></b>:-</li>
+                    Combines a specified number of digits (e.g., digits 2 for two-digit numbers) into the space of a single character. If no integer is provided, it defaults to 2. <br>
+                </ol>
+            </li>
+        </ul>
+    <li><b><u>text-decoration</u></b>:-</li>
+    -The text-decoration property in CSS is used to add decorative lines to text, such as underlines, overlines, line-throughs, or combinations of these. It can also control the style, color, and thickness of these lines.<br>
+    <ul type="none">
+        <li><b>Values:-</b>
+            <ol>
+                <li><b><u>Line Types (text-decoration-line)</u></b>:-</li><b>.none:-</b>No decoration (default).<br>
+                <b>.underline:-</b>Adds a line below the text. <br>
+                <b>.overline:-</b>Adds a line above the text. <br>
+                <b>.line-through:-</b>Adds a line through the text (strikethrough). <br>
+                <b>.blink:-</b>Makes text blink (deprecated and not recommended). <br>
+                <li><b><u>Color (text-decoration-color):</u></b>:-</li>
+                Sets the color of the decoration line (e.g., red, #00ff00, rgba(0,0,0,0.5)).<br>
+                <li><b><u>Style (text-decoration-style):</u></b>:-</li><b>.solid:-</b>A solid line (default).<br>
+                <b>.double:-</b>Two parallel lines. <br>
+                <b>.dotted:-</b> A dotted line. <br>
+                <b>.dashed:-</b>A dashed line <br>
+                <b>.wavy:-</b>A wavy line. <br>
+                <li><b><u>Thickness (text-decoration-thickness)</u></b>:-</li>
+                Sets the thickness of the line (e.g., 1px, 0.2em, auto). <br>
+            </ol>
+        </li>
+    </ul>
+    <li><b><u>text-decoration-color</u></b>:-</li>
+        -The text-decoration-color property in CSS is used to specify the color of the decorative lines added to text using the text-decoration property. These lines can include underlines, overlines, or line-throughs. <br>
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>Named colors</u></b>:-</li>
+                    -  red, blue, green, etc. <br>
+                    <li><b><u>Hex codes</u></b>:-</li>
+                    #ff0000, #00ff00, etc.<br>
+                    <li><b><u>RGB/RGBA</u></b>:-</li>
+                    rgb(255, 0, 0), rgba(255, 0, 0, 0.5). <br>
+                    <li><b><u>HSL/HSLA</u></b>:-</li> hsl(0, 100%, 50%), hsla(0, 100%, 50%, 0.5).
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-decoration-line</u></b>:-</li>
+        -The CSS property text-decoration-line is used to set the type of line decoration for text. Here's a breakdown: <br>
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>none</u></b>:-</li>
+                    - No decoration. This is the default.<br>
+                    <li><b><u>underline</u></b>:-</li>
+                    A line below the text.<br>
+                    <li><b><u>overline</u></b>:-</li>
+                    A line above the text. <br>
+                    <li><b><u>line-through</u></b>:-</li>A line through the middle of the text.<br>
+                    <li><b><u>underline overline</u></b>:-</li> Both an underline and overline. <br>
+                    <li><b><u>underline line-through</u></b>:-</li>
+                    Both an underline and line-through.
+                    <li><b><u>overline line-through</u></b>:-</li>
+                    Both an overline and line-through.
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-decoration-skip</u></b>:-</li>
+        -text-decoration-skip is a CSS property that controls how text decorations, such as underlines, overlines, and line-throughs, are rendered in relation to the text and other elements. It allows you to specify whether the decoration should skip certain parts of the text, such as spaces, punctuation, or inline elements.<br>
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>none</u></b>:-</li>
+                    - The text decoration is applied to all parts of the text, including spaces, punctuation, and inline elements.<br>
+                    <li><b><u>objects</u></b>:-</li>
+                    The text decoration skips inline elements (e.g., images, inline blocks).<br>
+                    <li><b><u>spaces</u></b>:-</li>
+                    The text decoration skips spaces and punctuation<br>
+                    <li><b><u>edges</u></b>:-</li>The text decoration starts and ends slightly inward from the edges of the text content, creating a gap at the edges.<br>
+                    <li><b><u>box-decoration</u></b>:-</li> The text decoration skips the box decoration (e.g., background, padding, border) of the element. <br>
+                    <li><b><u>leading-spaces</u></b>:-</li> The text decoration skips the box decoration (e.g., The same as spaces, except that only leading spaces are skipped. <br>
+                    <li><b><u>trailing-spaces</u></b>:-</li> The text decoration skips the box decoration (e.g., The same as spaces, except that only trailing spaces are skipped. <br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-decoration-skip-ink</u></b>:-</li>
+        -text-decoration-skip-ink is a CSS property that controls how underlines and overlines are drawn when they intersect with glyphs (characters) in text. Specifically, it determines whether the decoration should skip over the parts of glyphs that extend below or above the baseline (e.g., descenders in letters like "g," "j," "p," "q," and "y").<br>
+        -This property is particularly useful for improving the readability of underlined text, especially in languages with complex glyphs.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>auto (default):</u></b>:-</li>
+                    - The browser automatically skips the parts of the underline or overline that intersect with glyphs.<br>
+                    -This creates gaps in the decoration where it overlaps with descenders or ascenders, making the text more readable.<br>
+                    <li><b><u>none</u></b>:-</li>
+                    - The underline or overline is drawn continuously, even if it intersects with glyphs..<br>
+                    -This can make the text harder to read, especially with characters that have descenders. <br>
+                    <li><b><u>all</u></b>:-</li>
+                    - Similar to auto, but ensures that the decoration skips all glyphs, including those that might not be skipped by auto in some cases.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-decoration-style</u></b>:-</li>
+        -The text-decoration-style CSS property specifies the style of the line used for text decorations, such as underlines, overlines, and line-throughs. It works in conjunction with the text-decoration-line property, which defines the type of decoration (underline, overline, line-through), and text-decoration-color, which sets the color of the decoration.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>solid (default):</u></b>:-</li>
+                    - Draws a single, solid line.
+                    <li><b><u>double</u></b>:-</li>
+                    - Draws two parallel solid lines.
+                    <li><b><u>dotted</u></b>:-</li>
+                    - Draws a dotted line.<br>
+                    <li><b><u>dashed</u></b>:-</li>
+                    - Draws a dashed line<br>
+                    <li><b><u>wavy</u></b>:-</li>
+                    - Draws a wavy line.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-decoration-thickness</u></b>:-</li>
+        -The text-decoration-thickness CSS property allows you to control the thickness (or stroke width) of text decoration lines, such as underlines, overlines, and line-throughs. This property is particularly useful for customizing the appearance of text decorations to match your design requirements.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>auto (default)</u></b>:-</li>
+                    - The browser automatically selects an appropriate thickness for the text decoration, typically based on the font size and style.
+                    <li><b><u>from-font</u></b>:-</li>
+                    - Uses the thickness specified in the font file, if available. If the font does not provide a thickness, it falls back to auto
+                    <li><b><u>Length values</u></b>:-</li>
+                    - You can specify a fixed thickness using CSS length units like px, em, rem, etc.<br>
+                    -Example: 2px, 0.1em, 0.5rem. <br>
+                    <li><b><u>Percentage values:</u></b>:-</li>
+                    - You can specify the thickness as a percentage of the font size<br>
+                    - Example: 10%
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-emphasis</u></b>:-</li>
+        -The text-emphasis CSS property is used to apply emphasis marks to text, commonly used in East Asian languages (e.g., Chinese, Japanese, Korean) to highlight or stress certain characters or words. It is a shorthand property that combines text-emphasis-style and text-emphasis-color.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>Shapes:</u></b>:-
+                    <ul type="circle">
+                        <li><b>Filled</b></li>A filled shape(default).<br>
+                        <li><b>Open</b></li>A hollow shape<br>
+                        <li><b>dot</b></li>A small circle(•)<br>
+                        <li><b>circle</b></li>A larger circle (●)<br>
+                        <li><b>triangle</b></li>A triangle (▲).<br>
+                        <li><b>sesame</b></li>A sesame seed shape (﹅).<br>
+                        <li><b>double-circle</b></li>Two concentric circles.<br>
+                    </ul></li>
+                    <li><b><u>Strings:</u></b>:-</li>
+                    - You can use a single character (e.g., "*", "!") as the emphasis mark.
+                    <li><b><u>none</u></b>:-</li>
+                    - No emphasis mark is applied.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-emphasis-color</u></b>:-</li>
+        -The text-emphasis-color CSS property specifies the color of emphasis marks applied to text using the text-emphasis property. It works in conjunction with text-emphasis-style to define the appearance of emphasis marks, which are commonly used in East Asian languages to highlight or stress certain characters or words. <br>
+       <b> < color>: Any valid CSS color value, such as: <br>
+
+            Named colors (e.g., red, blue). <br>
+            
+            Hexadecimal values (e.g., #ff0000). <br>
+            
+            RGB/RGBA values (e.g., rgb(255, 0, 0), rgba(255, 0, 0, 0.5)). <br>
+            
+            HSL/HSLA values (e.g., hsl(0, 100%, 50%), hsla(0, 100%, 50%, 0.5)). <br> </b>
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li>If text-emphasis-color is not specified, the emphasis marks will use the current text color (color property).</li>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-emphasis-position</u></b>:-</li>
+        -The text-emphasis-position CSS property specifies the position of emphasis marks relative to the text. Emphasis marks are commonly used in East Asian languages (e.g., Chinese, Japanese, Korean) to highlight or stress certain characters or words. This property determines whether the emphasis marks are placed over or under the text.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>Default over:</u></b>:-</li>
+                    - For horizontal writing modes (e.g., left-to-right or right-to-left text)
+                    <li><b><u>Default: right</u></b>:-</li>
+                    - For vertical writing modes (e.g., top-to-bottom text)
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-emphasis-style</u></b>:-</li>
+        -The text-emphasis-style CSS property specifies the shape or style of emphasis marks applied to text. Emphasis marks are commonly used in East Asian languages (e.g., Chinese, Japanese, Korean) to highlight or stress certain characters or words. This property defines the visual appearance of the emphasis marks, such as filled circles, open circles, dots, triangles, or custom characters.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>Shapes:</u></b>:-
+                    <ul type="circle">
+                        <li><b>Filled</b></li>A filled shape(default).<br>
+                        <li><b>Open</b></li>A hollow shape<br>
+                        <li><b>dot</b></li>A small circle(•)<br>
+                        <li><b>circle</b></li>A larger circle (●)<br>
+                        <li><b>triangle</b></li>A triangle (▲).<br>
+                        <li><b>sesame</b></li>A sesame seed shape (﹅).<br>
+                        <li><b>double-circle</b></li>Two concentric circles.<br>
+                    </ul></li>
+                    <li><b><u>Strings:</u></b>:-</li>
+                    - You can use a single character (e.g., "*", "!") as the emphasis mark.
+                    <li><b><u>none</u></b>:-</li>
+                    - No emphasis mark is applied.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-indent</u></b>:-</li>
+        -The text-indent CSS property specifies the indentation of the first line of a block of text. It is commonly used to create a visually distinct starting point for paragraphs or other text blocks, such as in printed books or articles.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>0 :</u></b>:-</li>
+                    - (no indentation).
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-justify</u></b>:-</li>
+        -The text-justify CSS property controls the type of justification to use when text-align: justify; is applied to a block of text. Justification adjusts the spacing between words and sometimes between characters to align text evenly along both the left and right edges of a container. This property is particularly useful for improving the appearance of justified text in different languages and layouts.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>auto (default):</u></b>:-</li>
+                    - The browser automatically chooses the most appropriate justification method based on the language and text content.
+                    <li><b><u>none</u></b>:-</li>
+                    - Justification is disabled, even if text-align: justify; is applied.
+                    <li><b><u>inter-word</u></b>:-</li>
+                    - Justification is achieved by adjusting the spacing between words. This is the most common method for languages like English.<br>
+                    <li><b><u>inter-character</u></b>:-</li>
+                    - Justification is achieved by adjusting the spacing between characters. This is often used for languages like Japanese or Chinese, where word boundaries are less clear.<br>
+                    <li><b><u>distribute</u></b>:-</li>
+                    - Similar to inter-character, but spaces at the end of lines are also stretched. This method is less common and primarily used in East Asian typography.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-orientation</u></b>:-</li>
+        -The text-orientation CSS property controls the orientation of text characters within a line of text, particularly in vertical writing modes. It is primarily used in East Asian languages (e.g., Chinese, Japanese, Korean) or when working with vertical text layouts. This property determines whether characters are displayed upright or sideways.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>mixed (default):</u></b>:-</li>
+                    - Characters are displayed upright if they are part of an upright script (e.g., Latin, Cyrillic). <br>
+                    - Characters from horizontal scripts (e.g., Chinese, Japanese) are displayed sideways.
+                    <li><b><u>upright</u></b>:-</li>
+                    - All characters are displayed upright, regardless of their script.
+                    <li><b><u>sideways</u></b>:-</li>
+                    - All characters are displayed sideways, rotated 90 degrees clockwise.
+                    <li><b><u>sideways-right</u></b>:-</li>
+                    - Same as sideways, but included for compatibility with older specifications.
+                    <li><b><u>use-glyph-orientation</u></b>:-</li>
+                    - Obsolete and no longer used in modern CSS.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-overflow</u></b>:-</li>
+        -The text-overflow CSS property controls how text that overflows its container is displayed. It is typically used to handle situations where text is too long to fit within a single line of a container, and you want to indicate to users that there is more content than what is visible.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>clip (default):</u></b>:-</li>
+                    - The overflowing text is simply clipped and not displayed. No visual indication is provided that the text has been truncated.
+                    <li><b><u>ellipsis</u></b>:-</li>
+                    - An ellipsis (...) is displayed at the point where the text overflows, indicating that there is more content than what is visible..
+                    <li><b><u>< string></u></b>:-</li>
+                    - A custom string (e.g., "---") can be displayed at the point of overflow. However, this value is not widely supported in most browsers.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-rendering</u></b>:-</li>
+        -The text-rendering CSS property provides hints to the browser about how to optimize the rendering of text. It is primarily used to control the trade-off between speed, legibility, and geometric precision when rendering text. This property is especially useful for web fonts and SVG text.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>auto (default):</u></b>:-</li>
+                    - The browser makes its own decisions about how to optimize text rendering. This is typically a balance between speed and legibility.
+                    <li><b><u>optimizeSpeed</u></b>:-</li>
+                    - The browser prioritizes rendering speed over legibility and geometric precision. This may disable kerning and ligatures.
+                    <li><b><u>optimizeLegibility</u></b>:-</li>
+                    - The browser prioritizes legibility, enabling kerning and ligatures, and may use more advanced rendering techniques. This can improve the appearance of text but may impact performance.<br>
+                    <li><b><u>geometricPrecision</u></b>:-</li>
+                    - The browser prioritizes geometric precision, ensuring that text is rendered exactly as specified. This is particularly useful for SVG text or when scaling text dynamically. <br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-shadow</u></b>:-</li>
+        -The text-shadow CSS property adds shadows to text, creating a visual effect that can make text stand out or appear more dynamic. It is commonly used for decorative purposes, to improve readability, or to create a 3D-like effect.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>none(default):</u></b>:-</li>
+                    - no shadow.
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-size-adjust</u></b>:-</li>
+        -The text-size-adjust CSS property controls the text inflation algorithm used on some smartphones and tablets. When a webpage is viewed on a small screen, mobile browsers may automatically increase the font size to make the text more readable. This property allows you to override this behavior and control how text is resized.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>auto (default):</u></b>:-</li>
+                    - The browser may adjust the text size to improve readability on small screens.
+                    <li><b><u>none</u></b>:-</li>
+                    - Disables the text inflation algorithm. Text will not be resized automatically.
+                    <li><b><u>< percentage></u></b>:-</li>
+                    - Specifies a percentage value to control the text size adjustment. For example, 100% means no adjustment, while 150% increases the text size by 50%.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-spacing-trim</u></b>:-</li>
+        -The text-spacing-trim CSS property is a proposed feature that aims to control the trimming of spaces around text in specific contexts, particularly in East Asian typography. It is designed to handle spacing issues that arise when mixing different scripts (e.g., Latin and CJK characters) or when dealing with punctuation and other special characters.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>normal (default):</u></b>:-</li>
+                    - No special spacing adjustments are applied.
+                    <li><b><u>trim-start</u></b>:-</li>
+                    - Trims spaces at the start of a line or text block.
+                    <li><b><u>space-first</u></b>:-</li>
+                    - Adds space before the first character of a line or text block.<br>
+                    <li><b><u>space-all</u></b>:-</li>
+                    - Adds space around all characters, including punctuation and special characters.<br>
+                    <li><b><u>inherit</u></b>:-</li>
+                    - Inherits the value from the parent element.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-transform</u></b>:-</li>
+        -The text-transform CSS property controls the capitalization of text. It allows you to change the text to uppercase, lowercase, or capitalize the first letter of each word, without altering the original content in the HTML.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>none (default):</u></b>:-</li>
+                    - No transformation is applied. The text is displayed as it is.
+                    <li><b><u>capitalize</u></b>:-</li>
+                    - Transforms the first character of each word to uppercase. Other characters remain unchanged.
+                    <li><b><u>uppercase</u></b>:-</li>
+                    - Transforms all characters to uppercase<br>
+                    <li><b><u>lowercase</u></b>:-</li>
+                    -Transforms all characters to lowercase<br>
+                    <li><b><u>full-width</u></b>:-</li>
+                    - Converts characters to their full-width forms, which are commonly used in East Asian typography. This is useful for aligning mixed scripts.<br>
+                    <li><b><u>full-size-kana</u></b>:-</li>
+                    - Converts small kana characters (e.g., ぁ, ぃ) in Japanese text to full-size kana (e.g., あ, い). This is primarily used for readability in ruby annotations.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-underline-offset</u></b>:-</li>
+        -The text-underline-offset CSS property controls the distance (offset) between a text underline and the text itself. It allows you to adjust the position of the underline, making it closer to or farther from the text. This property is particularly useful for fine-tuning the appearance of underlined text, especially when working with custom fonts or complex layouts.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>auto (default)</u></b></li>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-underline-position</u></b>:-</li>
+        -The text-underline-position CSS property controls the position of underlines applied to text using text-decoration: underline. It allows you to adjust where the underline is drawn relative to the text baseline, which is especially useful for improving readability in languages with complex glyphs or vertical writing modes.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>auto (default):</u></b>:-</li>
+                    - The browser automatically positions the underline. This usually places it slightly below the baseline, which may overlap with descenders (e.g., in letters like "g" or "y").
+                    <li><b><u>from-font</u></b>:-</li>
+                    - Uses metrics from the font file (if available) to determine the underline position. If the font lacks this data, it falls back to auto.
+                    <li><b><u>under</u></b>:-</li>
+                    - Forces the underline to be drawn below the baseline, avoiding clashes with descenders. This is ideal for readability in horizontal text.<br>
+                    <li><b><u>left / right</u></b>:-</li>
+                    - Positions the underline to the left or right of the text, used in vertical writing modes (common in East Asian languages like Japanese or Chinese).<br>
+                    <li><b><u>Combinations:</u></b>:-</li>
+                    - under left / under right: Combines under with a directional offset for vertical text.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-wrap</u></b>:-</li>
+        -The text-wrap CSS property controls how text is wrapped within its container. It determines whether text should break lines to fit within the available space or avoid wrapping altogether. This property is particularly useful for improving readability and managing text layout in responsive designs.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>wrap (default):</u></b>:-</li>
+                    - Text breaks into multiple lines to fit within the container's width.
+                    <li><b><u>nowrap</u></b>:-</li>
+                    - Text does not break into multiple lines. It stays on a single line, potentially overflowing the container.
+                    <li><b><u>balance</u></b>:-</li>
+                    - Attempts to balance the text across multiple lines, making each line roughly the same length. This is useful for headings or short blocks of text to create a more visually appealing layout.<br>
+                    <li><b><u>pretty</u></b>:-</li>
+                    - Similar to wrap, but optimizes line breaks to improve readability and avoid awkward breaks (e.g., hyphenation or orphaned words). This is experimental and may not be widely supported.<br>
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-wrap-mode</u></b>:-</li>
+        -The text-wrap-mode CSS property is part of the CSS Text Module Level 4 and is used to control how text wraps within its container. It determines whether text should wrap to the next line when it reaches the edge of its container or if it should overflow instead. This property is particularly useful for managing text layout in responsive designs and ensuring readability.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>wrap (default):</u></b>:-</li>
+                    - Text breaks into multiple lines to fit within the container's width.
+                    <li><b><u>nowrap</u></b>:-</li>
+                    - Text does not break into multiple lines. It stays on a single line, potentially overflowing the container.
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>text-wrap-style</u></b>:-</li>
+        -The text-wrap-style CSS property is part of the CSS Text Module Level 4 (still in draft as of 2023) and is designed to control how text is wrapped and formatted within its container. However, this property is not yet standardized and has very limited browser support. It is part of a broader effort to improve text layout control in CSS.
+        <ul type="none">
+            <li><b>Values:-</b>
+                <ol>
+                    <li><b><u>auto (default):</u></b>:-</li>
+                    - The browser handles line breaks automatically, using its default algorithm.
+                    <li><b><u>balance</u></b>:-</li>
+                    - Attempts to balance text across lines to create visually even line lengths (similar to text-wrap: balance).
+                    <li><b><u>pretty</u></b>:-</li>
+                    - Optimizes line breaks to avoid awkward hyphenation and orphaned words, improving readability.<br>
+                    <li><b><u>stable</u></b>:-</li>
+                    - Prioritizes consistent line breaks when content changes dynamically (prevents jarring reflows).<br>
+                    <li><b><u>< custom-ident></u></b>:-</li>
+                    - Experimental value for future extensions (not yet defined).<br>
+                </ol>
+            </li>
+        </ul>
+    </ol><hr>
+</body>
+</html>
