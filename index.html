@@ -7,7 +7,6 @@ Css Notes By Rajat Gupta
     <link rel="shortcut icon" type="x icon" href="https://media.discordapp.net/attachments/1260288413077213195/1339307048894206132/Qr_Code_Design_Vector_PNG_Images_Code_Icon_Design_Vector_Code_Icons_Icon_Illustration_PNG_Image_For_Free_Download.jpg?ex=67ae3e63&is=67acece3&hm=6b1162368b0e6b43afbcc884753404c38955dd9b270586311612c0d228081dbd&=&format=webp&width=450&height=450">
 
 </head>
-
 <body>
     <h1 style="text-align: center; margin: 0 auto;"><u>CSS Notes</u></h1>
     <h2><u>CSS</u></h2>
@@ -1153,5 +1152,40 @@ Css Notes By Rajat Gupta
            By default,most browsers set the font size to 16px,so 1rem=16px.
     </ol>
     <hr>
+          <h2>Position Property</h2>
+    The position property in CSS is used to control how an element is positioned in a document. It allows you to place elements in specific locations on the page, relative to their normal position, the viewport, or other elements.
+    <ul type="none">
+        <li><b>Values:-</b></li>
+        <ol><li><b><u>Static(default)</u></b>:-</li>
+        <ul type="DISC">
+            <li>The element is positioned according to the normal flow of the document</li>
+            <li>It is default value of all the element in html.it does not support any position element properties</li>
+        </ul>
+        <li><b><u>relative</u></b>:-</li>
+        <ul type="DISC">
+            <li>The element is positioned relative to the normal flow of the document</li>
+            <li>It supports positioning properties like[top,right,bottom,left] to offset the document from its normal position.</li>
+            <li>The space originally occupied by the element is preserved, but the element itself is moved to the new position.</li>
+        </ul>
+        <li><b><u>absolute</u></b>:-</li>
+        <ul type="DISC">
+            <li>The element is positioned relative to the closest positioned ancestor[an ancestor with position,set to relative,absolute,fixed,sticky]</li>
+            <li>If no such ancestor exist.it is positioned relative to the initial containing block[usually the < html> element or < body> element]</li>
+            <li>The element is removed from the normal document flow,and no space is reserved for it</li>
+        </ul>
+        <li><b><u>fixed</u></b>:-</li>
+        <ul type="Disc">
+            <li>The elemetn is position relative to browser(browser window)or viewport.</li>
+            <li>It stays  in the same place even when the page is scrolled.</li>
+            <li>The element is removed from the document flow.</li>
+        </ul>
+        <li><u><b>sticky</b></u>:-</li>
+        <ul type="Disc">
+            <li>The element is position relative to its normal position until a certain scroll thureshold is reached,after which it become fixed.</li>
+            <li>It toggles between relative and fixed based on the user scroll position</li>
+            <li>Requires at least one of position property value.</li>
+        </ul>
+        </ol>
+        <hr>
 </body>
 </html>
