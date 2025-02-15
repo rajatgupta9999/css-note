@@ -1211,5 +1211,96 @@ Css Notes By Rajat Gupta
         </ol></li>
     </ul>
     <hr>
+                <h2>Background Properties</h2>
+    To set a background image in CSS, use the background-image property along with other background-related properties
+    to control its appearance.
+    <ol>
+        <li><b><u>background-image</u></b>:-</li>
+        This is the most used way to set a background image in CSS.
+        <ul type="none">
+            <li><b>Values</b>:-</li>
+            <ol>
+                <li><u><b>url()</b></u>:-
+                    Path of the image <br> [background image: url("path");]
+                </li>
+            </ol>
+        </ul>
+        <li><b><u>background-size</u></b>:-</li>
+        controls the size of the background image.
+        <ul type="none">
+            <li><b>Values</b>:-</li>
+            <ol>
+                <li><u><b>auto(Default)</b></u>:-
+                    The image's natural size is used.
+                </li>
+                <li><u><b>Cover</b></u>:-
+                    Scales the image to cover the entire container (may crop the image).
+                </li>
+                <li><u><b>Container</b></u>:-
+                    Scales the image to fit entirely within the container, potentially leaving blank space or repeat
+                    images.
+                </li>
+                <li>
+                    -we can use exact dimensions to the background [background-size:100% 50px].
+                </li>
+            </ol>
+        </ul>
+        <li><b><u>background-repeat</u></b>:-</li>
+        Controls how the background image is repeated.
+        <ul type="none">
+            <li><b>Values</b>:-</li>
+            <ol>
+                <li><u><b>repeat(Default)</b></u>:-
+                    Tiles the image.
+                </li>
+                <li><u><b>no-repeat</b></u>:-
+                    Displays the image once.
+                </li>
+                <li><u><b>repeat-x</b></u>:-
+                    Repeats horizontally.
+                </li>
+                <li><u><b>repeat-y</b></u>:-
+                    Repeats vertically.
+                </li>
+            </ol>
+        </ul>
+        <li><b><u>background-position</u></b>:-</li>
+        Specifies the starting position of the background image.
+        <ul type="none">
+            <li><b>Values</b>:-</li>
+            <ul type="disc">
+                <li>
+                    We can use keywords like top,bottom,left,right,center, or combinations of these.
+                </li>
+                <li>
+                    We can also use pixel values(e.g. 10px 20px) or percentage
+                    (e.g. 50% 100%).
+                </li>
+            </ul>
+        </ul>
+        <li><b><u>background(Shorthand)</u></b>:-</li>
+        you can combine all the background properties into a single declaration
+        [background:color image repeat position size].
+    </ol>
+    <hr>
+    <h2>Adding Multiple Background Images</h2>
+    We can add multiple background images to a single element.
+    <ul type="none">
+        <li><b>Steps</b>:-</li>
+        <ol>
+            <li><u><b>Specify the image</b></u>:-
+                <ul type="circle">
+                    <li>Use the background-image property with multiple url() values.</li>
+                </ul>
+            </li>
+            <li><u><b>Specify the image</b></u>:-
+                <ul type="circle">
+                    <li>Use background(repeat,position,size) to control each images's behaviour.</li>
+                    <li>The order of values corresponds to the order of image.</li>
+                </ul>
+            </li>
+        </ol>
+    </ul>
+    <hr>
 </body>
 </html>
