@@ -1302,5 +1302,169 @@ Css Notes By Rajat Gupta
         </ol>
     </ul>
     <hr>
+                <h2>Flex Box</h2>
+    Flexbox (Flexible Box Layout) is a CSS layout module designed to create flexible and responsive layouts. It allows
+    you to easily align and distribute space among items in a container, even when their sizes are unknown or dynamic.
+    <br>
+    - Dislay property for this is flex. [display: flex;]
+    <h3><b>The Flex model</b></h3>
+    The Flex Model is a blended learning approach that combines online and offline learning experiences, allowing
+    students to have more control over the pace, time, and place of their learning. It is one of the most
+    student-centered models of blended learning, offering flexibility and personalized learning paths. <br>
+    <img src="https://qawithexperts.com/Images/Upload/04-11-2017/flexbox-CSS-layout.png"
+        alt="Error shown Flex model image" width="300px">
+    <img src="https://media.discordapp.net/attachments/1260288413077213195/1341107865775112312/IMG_20250217_232511.jpg?ex=67b4cb87&is=67b37a07&hm=3e411c760a32046738b7b790b321462ff1241bc2c61a607cc874dd8607463334&=&format=webp&width=407&height=638"
+        alt="Error" width="110px" height="180px">
+    <img src="https://media.discordapp.net/attachments/1260288413077213195/1341118269913960498/IMG_20250218_001059.jpg?ex=67b4d538&is=67b383b8&hm=8002a0e153314b17c8095a23df540292eddff99b293dc44e64c40997ee16996e&=&format=webp&width=408&height=638"
+        alt="Error" width="110px" height="180px">
+    <img src="https://media.discordapp.net/attachments/1260288413077213195/1341122783274340493/IMG_20250218_003249.jpg?ex=67b4d96c&is=67b387ec&hm=4c5d86f05837c6de383bc7f549249c6f94c3d5379fce9c17e465c21a013a8a1d&=&format=webp&width=410&height=637"
+        alt="Error" width="110px" height="180px">
+    <img src="https://media.discordapp.net/attachments/1260288413077213195/1341120751851405352/IMG_20250218_002437.jpg?ex=67b4d788&is=67b38608&hm=b3a6eaeb98fdf66ca275369895815865fe401922dec8181b1cd052a87189f3af&=&format=webp&width=411&height=638"
+        alt="Error" width="110px" height="180px">
+    <img src="https://media.discordapp.net/attachments/1260288413077213195/1341126707318493255/IMG_20250218_004833.jpg?ex=67b4dd13&is=67b38b93&hm=2e6aa0c9ea940d73c35056ca7a8a68b8d1f6cdcf785c807f54ddd48ebe25c56b&=&format=webp&width=406&height=638"
+        alt="Error" width="110px" height="180px">
+    <img src="https://media.discordapp.net/attachments/1260288413077213195/1341128470796832869/IMG_20250218_005530.jpg?ex=67b4deb8&is=67b38d38&hm=c7b2a7fbd6cb1828a89d11d40fe842a6ce426f83636c57c1d2a545924d86d318&=&format=webp&width=408&height=638"
+        alt="Error" width="110px" height="180px">
+    <br>
+    - The Main Axis and Cross Axis is the axis along which the flex items are placed in the flex container and it is
+    changeable according to the content direction. <br>
+    <ul type="none">
+        <li><b>Properties and Values</b>:-</li>
+        <ol>
+            <li><b>Flexbox Direction</b>:-</li>
+            -It sets how flex items are placed in the flex container, along which axis and direction.
+            <ul type="none">
+                <li><b>Values</b>:-</li>
+                <ol>
+                    <li><u><b>row</b></u>:-</li>
+                    -Flex items are placed horizontally, from left to right. <br>
+                    -The main axis runs horizontally (left to right).
+                    <li><u><b>row-reverse</b></u>:-</li>
+                    - Flex items are placed horizontally, but in reverse order (right to left). <br>
+                    -The main axis runs horizontally (right to left).
+                    <li><u><b>column</b></u>:-</li>
+                    -Flex items are placed vertically, from top to bottom. <br>
+                    -The main axis runs vertically (top to bottom).
+                    <li><u><b>column-reverse</b></u>:-</li>
+                    -Flex items are placed vertically, but in reverse order (bottom to top). <br>
+                    -The main axis runs vertically (bottom to top). <br>
+                </ol>
+            </ul>
+            <li><b>align-items</b>:-</li>
+            - align-items property is used to align flex items along the cross axis of the flex container. The cross
+            axis is perpendicular to the main axis (which is defined by the flex-direction property). The align-items
+            property ensures that all flex items are aligned consistently within the container.
+            <ul type="none">
+                <li><b>Values</b>:-</li>
+                <ol>
+                    <li><u><b>stretch (default)</b></u>:-</li>
+                    -Flex items are stretched to fill the container along the cross axis. <br>
+                    <li><u><b>flex-start</b></u>:-</li>
+                    - Flex items are aligned to the start of the cross axis.
+                    <li><u><b>flex-end</b></u>:-</li>
+                    -Flex items are aligned to the end of the cross axis.<br>
+                    <li><u><b>center</b></u>:-</li>
+                    -Flex items are centered along the cross axis.<br>
+                    <li><u><b>baseline</b></u>:-</li>
+                    -Flex items are aligned such that their baselines align. <br>-This is useful when dealing with text
+                    or items of varying heights.
+                </ol>
+            </ul>
+            <li><b>justify-content</b>:-</li>
+            - the justify-content property is used to align flex items along the main axis of the flex container. <br>
+            - The justify-content property controls how space is distributed between and around flex items.
+            <ul type="none">
+                <li><b>Values</b>:-</li>
+                <ol>
+                    <li><u><b>flex-start (default)</b></u>:-</li>
+                    -Flex items are packed toward the start of the main axis. <br>
+                    <li><u><b>flex-end</b></u>:-</li>
+                    - Flex items are packed toward the end of the main axis.
+                    <li><u><b>center</b></u>:-</li>
+                    -Flex items are centered along the main axis.<br>
+                    <li><u><b>space-between</b></u>:-</li>
+                    -Flex items are evenly distributed along the main axis, with the first item at the start and the
+                    last item at the end <li><u><b>space-around</b></u>:-</li>
+                    -Flex items are evenly distributed along the main axis, with equal space around them.
+                    last item at the end <li><u><b>space-evenly</b></u>:-</li>
+                    -Flex items are evenly distributed along the main axis, with equal space between and around them.
+                </ol>
+            </ul>
+            <li><b>flex-wrap</b>:-</li>
+            - the flex-wrap property controls whether flex items are forced into a single line or can wrap onto multiple lines within a flex container. This property is particularly useful when dealing with containers that have limited space and contain multiple items.
+            <ul type="none">
+                <li><b>Values</b>:-</li>
+                <ol>
+                    <li><u><b>nowrap (default)</b></u>:-</li>
+                    -All flex items are placed in a single line, even if they overflow the container.<br>
+                    <li><u><b>wrap</b></u>:-</li>
+                    - Flex items wrap onto multiple lines from top to bottom (or left to right, depending on the flex-direction).
+                    <li><u><b>wrap-reverse</b></u>:-</li>
+                    -Flex items wrap onto multiple lines, but in reverse order (bottom to top or right to left).
+                </ol>
+            </ul>
+            <li><b>flex-grow</b>:-</li>
+            - the flex-grow property controls how much a flex item will grow relative to other flex items in the same container when there is extra space available. It determines the ability of a flex item to expand and take up remaining space along the main axis.
+            <ul type="none">
+                <li><b>Values</b>:-</li>
+                <ul type="Disc">
+                    <li>All flex items are placed in a single line, even if they overflow the container.</li>
+                    <li>It defines the proportion of the available space that the item should take up.</li>
+                    <li>If all items have flex-grow: 1, they will share the available space equally.</li>
+                    <li>If one item has flex-grow: 2 and the others have flex-grow: 1, the first item will take up twice as much space as the others.</li>
+                </ul>
+            </ul>
+            <li><b>flex-shrink</b>:-</li>
+            - the flex-shrink property controls how much a flex item will shrink relative to other flex items in the same container when there is not enough space available. It determines the ability of a flex item to reduce its size along the main axis.
+            <ul type="none">
+                <li><b>Values</b>:-</li>
+                <ul type="Disc">
+                    <li>The flex-shrink property accepts a unitless value (a positive number, default is 1).</li>
+                    <li>It defines the proportion of the negative space (overflow) that the item should shrink.</li>
+                    <li>If all items have flex-shrink: 1, they will shrink equally.</li>
+                    <li>If one item has flex-shrink: 2 and the others have flex-shrink: 1, the first item will shrink twice as much as the others.</li>
+                </ul>
+            </ul>
+            <li><b>align-content</b>:-</li>
+            - the align-content property is used to align multiple lines of flex items along the cross axis when there is extra space in the container. This property only works when the flex container has multiple lines (i.e., when flex-wrap is set to wrap or wrap-reverse).
+            <ul type="none">
+                <li><b>Values</b>:-</li>
+                <ol>
+                    <li><u><b>stretch (default)</b></u>:-</li>
+                    -Lines of flex items stretch to fill the remaining space along the cross axis.<br>
+                    <li><u><b>flex-start</b></u>:-</li>
+                    - Lines of flex items are packed toward the start of the cross axis.
+                    <li><u><b>flex-end</b></u>:-</li>
+                    -Lines of flex items are packed toward the end of the cross axis.<br>
+                    <li><u><b>center</b></u>:-</li>
+                    -Lines of flex items are centered along the cross axis.<li><u><b>space-between</b></u>:-</li>
+                    -Lines of flex items are evenly distributed along the cross axis, with the first line at the start and the last line at the end.
+                    <li><u><b>space-around</b></u>:-</li>
+                    -Lines of flex items are evenly distributed along the cross axis, with equal space around them.
+                    <li><u><b>space-evenly</b></u>:-</li>
+                    -Lines of flex items are evenly distributed along the cross axis, with equal space between and around them.
+                </ol>
+            </ul>
+            <li><b>align-self</b>:-</li>
+            - the align-self property is used to align an individual flex item along the cross axis of the flex container. It overrides the align-items value for that specific item, allowing you to customize the alignment of individual items within the container.
+            <ul type="none">
+                <li><b>Values</b>:-</li>
+                <ol>
+                    <li><u><b>auto (default)</b></u>:-</li>
+                    -The item inherits the align-items value from its parent container.
+                    <li><u><b>flex-start</b></u>:-</li>
+                    - The item is aligned to the start of the cross axis.
+                    <li><u><b>flex-end</b></u>:-</li>
+                    -The item is aligned to the end of the cross axis.<br>
+                    <li><u><b>center</b></u>:-</li>
+                    -The item is centered along the cross axis.<li><u><b>baseline</b></u>:-</li>
+                    -The item is aligned such that its baseline aligns with the baselines of other items.
+                    <li><u><b>stretch</b></u>:-</li>
+                    -The item is stretched to fill the container along the cross axis.
+                </ol>
+            </ul>
+        </ol>
+    </ul>
+    <hr>
 </body>
 </html>
