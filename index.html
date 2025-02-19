@@ -1476,5 +1476,60 @@ Css Notes By Rajat Gupta
         </ol>
     </ul>
     <hr>
+                <h2>Media Queries</h2>
+    • Media Queries in CSS are used to apply different styles based on the characteristics of the device or viewport, such as screen width, height, orientation, and resolution. They are essential for creating responsive designs that adapt to various devices like desktops, tablets, and mobile phones. <br>
+    • Media quearies have different targets <br>
+    • <u>Logical Operators:</u>
+    Use logical operators like <b>and</b>, <b>or</b>, and <b>not</b> to combine multiple media queries.
+    <ul type="none">
+        <li><b>Targets</b>:-</li>
+        <ul type="circle">
+            <li><b><u>all(defalut)</u></b>:- Applies to all devices.</li>
+            <li><b><u>screen</u></b>:- Applies to screens (e.g., desktops, tablets, phones, laptops).</li>
+            <li><b><u>print</u></b>:-Applies to printed documents or print previews.<br> •Useful for creating print-friendly styles.</li>
+            <li><b><u>speech</u></b>:- Applies to screen readers and other speech synthesis devices.
+            <br>•Used for accessibility purposes.</li>
+            <li><b><u>aural</u></b>:- Intended for speech synthesizers (replaced by speech).</li>
+            <li><b><u>braille</u></b>:- Intended for braille tactile feedback devices.</li>
+            <li><b><u>embossed</u></b>:- Intended for paged braille printers.</li>
+            <li><b><u>handheld</u></b>:- Intended for handheld devices (e.g., smartphones).</li>
+            <li><b><u>projection</u></b>:- Intended for projected presentations.</li>
+            <li><b><u>tty</u></b>:- Intended for teletypes and terminals.</li>
+            <li><b><u>tv</u></b>:- Intended for television-type devices.</li>
+        </ul>
+    </ul>
+    <ul type="none">
+        <li><b>Values</b>:-</li>
+        <ul type="disc">
+            <h3>1. Viewport/Device Dimensions</h3>
+            <li><b><u>width</u></b>:- Exact viewport width (e.g., width: 768px).</li>
+            <li><b><u>height</u></b>:- Exact viewport height.</li>
+            <li><b><u>min-width</u></b>:-Minimum viewport width (e.g., min-width: 768px).   </li>
+            <li><b><u>max-width</u></b>:- Maximum viewport width (e.g., max-width: 1024px). </li>
+            <li><b><u>min-height</u></b>:- Minimum viewport height.</li>
+            <li><b><u>max-height</u></b>:- Maximum viewport height.</li>
+            <h3>2. Orientation</h3>
+            <li><b><u>orientation</u></b>:- Checks if the device is in portrait or landscape mode.</li>
+            <h3>3. Resolution</h3>
+            <li><b><u>resolution</u></b>:- Checks the pixel density of the device (e.g., min-resolution: 2dppx for high-DPI screens).</li>
+            <h3>4. Aspect Ratio</h3>
+            <li><b><u>aspect-ratio</u></b>:- Ratio of viewport width to height (e.g., aspect-ratio: 16/9).</li>
+            <li><b><u>min-aspect-ratio</u></b>:- Minimum aspect ratio.</li>
+            <li><b><u>max-aspect-ratio</u></b>:- Maximum aspect ratio.</li>
+            <h3>5. Interaction Capabilities</h3>
+            <li><b><u>hover</u></b>:- Checks if the device supports hover (e.g., hover: hover for mice, hover: none for touchscreens).  </li>
+            <li><b><u>pointer</u></b>:- Checks the primary input mechanism (fine for mice, coarse for touchscreens).</li>
+            <h3>6. Color and Display</h3>
+            <li><b><u>color</u></b>:- Checks the number of bits per color component (e.g., min-color: 8).</li>
+            <li><b><u>color-gamut</u></b>:- Checks the color space (e.g., color-gamut: p3 for wide-gamut displays).</li>
+            <li><b><u>monochrome</u></b>:- Checks if the device is monochrome.</li>
+            <h3>7. Accessibility Preferences</h3>
+            <li><b><u>prefers-color-scheme</u></b>:- Detects dark/light mode (e.g., prefers-color-scheme: dark).</li>
+            <li><b><u>prefers-reduced-motion</u></b>:- Checks if the user prefers reduced motion.</li>
+            <h3>8. Scripting Support</h3>
+            <li><b><u>scripting</u></b>:- Checks if JavaScript is enabled (scripting: enabled or scripting: none).</li>
+        </ul>
+    </ul>
+    <hr>
 </body>
 </html>
