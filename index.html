@@ -1531,5 +1531,55 @@ Css Notes By Rajat Gupta
         </ul>
     </ul>
     <hr>
+                <h2>Transitions</h2>
+    CSS Transitions allow you to smoothly animate changes to CSS properties over a specified duration. They create fluid
+    visual effects (e.g., hover effects, color changes, or element movements) without JavaScript. <br>
+    <ul type="none">
+        <li><b>Value</b>:-</li>
+    </ul>
+    <ol>
+        <li><b><u>transition-property</b></u>:-</li>
+        Specifies which CSS properties to animate.
+        <br>
+        - <b>Example:</b> transition-property: background-color, width;
+        <br>
+        -The transition-property property can take:
+        <ul type="disc">
+            <li><b>all:</b> Applies transitions to all properties</li>
+            <li>Specific property names (e.g., <b>width, background-color etc</b>)</li>
+            <li>A comma-separated list of properties</li>
+            <li><b>none:</b> Disables transitions</li>
+        </ul>
+        <li><b><u>transition-duration</b></u>:-</li>Defines how long the transition lasts (e.g., 1s, 200ms). <br>
+        - <b>Example:</b>transition-duration: 0.3s;</b>
+        <li><b><u>transition-timing-function</u></b>:-</li>The transition-timing-function property in CSS specifies how
+        the intermediate values of a CSS property being transitioned are calculated over the duration of the transition.
+        Essentially, it defines the speed curve of the transition effect, allowing you to control the acceleration and
+        deceleration. <br>
+        <ul type="none">
+            <li><b>value</b>:-
+                <ol>
+                    <li><b><u>ease (default)</u></b>:-</li>The transition starts slowly, accelerates in the middle, and
+                    then slows down at the end.
+                    <li><b><u>linear</u></b>:-</li>The transition occurs at a constant speed from start to end.
+                    <li><b><u>ease-in</u></b>:-</li>The transition starts slowly and accelerates as it progresses.
+                    <li><b><u>ease-out</u></b>:-</li>The transition starts quickly and decelerates as it progresses.
+                    <li><b><u>ease-in-out</u></b>:-</li>The transition starts slowly, accelerates in the middle, and
+                    then decelerates at the end.
+                    <li><b><u>cubic-bezier(n,n,n,n)</u></b>:-</li>
+                    Allows you to define a custom speed curve using a cubic Bézier function. The parameters are four
+                    numbers between 0 and 1 that define the control points of the curve.
+                    <li><b><u>steps(n, start|end)</u></b>:-</li>The transition is divided into a specified number of
+                    steps, with the change occurring at the start or end of each step.
+                </ol>
+            </li>
+        </ul>
+        <li><b><u>transition-delay</b></u>:-</li>Adds a delay before the transition starts. <br>
+        - <b>Example:</b>transition-delay: 0.2s;</b>
+    </ol>
+    <h3>Transition Shorthand</h3>
+    transition: [property] [duration] [timing-function] [delay]; <br>
+    - <b>Example:</b>transition: font-size 2s ease-in-out 0.2s;</b>
+    <hr>
 </body>
 </html>
