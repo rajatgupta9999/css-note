@@ -1581,5 +1581,123 @@ Css Notes By Rajat Gupta
     transition: [property] [duration] [timing-function] [delay]; <br>
     - <b>Example:</b>transition: font-size 2s ease-in-out 0.2s;</b>
     <hr>
+                <h2>CSS Transform</h2>
+    CSS Transforms allow you to modify the shape, size, position, or orientation of elements in 2D or 3D space. They are
+    widely used for animations, hover effects, and creating dynamic layouts without affecting the document flow. <br>
+    <ul type="none">
+        <li><b>Value</b>:-</li>
+    </ul>
+    <ol>
+        <li><b><u>rotate</u></b>:-</li>
+        It is used to rotate an element around a fixed point (by default, its center) in 2D or 3D space. which allows
+        you to apply visual transformations to elements.
+        <ul type="disc">
+            <li>Degrees (deg): [e.g., 45deg (45 degrees clockwise)].</li>
+            <li>Radians (rad): [e.g., 1.57rad (≈90 degrees)].</li>
+            <li>Turns (turn): [e.g., 0.25turn (90 degrees)].</li>
+            <li>Gradians (grad):[e.g., 100grad (90 degrees)].</li>
+        </ul>
+        <ol>
+            <li><u><b>Basic Rotation</b></u>:-</li>
+            Rotate an element clockwise or counterclockwise <br>
+            <u>Ex</u>:- transform: rotate(30deg); Rotate 30° clockwise
+            <li><u><b>Rotation Origin</b></u>:-</li>
+            By default, rotation occurs around the element’s center. Use transform-origin to change the pivot point <br>
+            <u>Ex</u>:-transform-origin: top left;
+            transform: rotate(45deg); Rotate around the top-left corner of the element.
+            <li><u><b>3D Rotation</b></u>:-</li>
+            For 3D effects, combine with other rotation functions <br>
+            <ol>
+                <li><b><u>rotateX()</u></b>:-</li>Rotate around the X-axis (vertical flip).
+                <li><b><u>rotateY()</u></b>:-</li>Rotate around the Y-axis (horizontal flip).
+                <li><b><u>rotateZ()</u></b>:-</li>Same as rotate(default Z-axis).
+            </ol>
+        </ol>
+        <li><b><u>scale</u></b>:-</li>
+        It is used to resize an element by scaling it up or down. It modifies the size of an element without affecting
+        its layout in the document flow, making it ideal for animations, hover effects, and visual transformations.
+        <ul type="disc">
+            <li>sx: Scaling factor along the X-axis (horizontal). <br>
+                1 = original size, 2 = double size, 0.5 = half size.</li>
+            <li>sy: (Optional) Scaling factor along the Y-axis (vertical).If omitted, sy defaults to sx.</li>
+        </ul>
+        <ol>
+            <li><u><b>Uniform Scaling</b></u>:-</li>
+            Scale an element equally in both directions. <br>
+            <u>Ex</u>:- transform: scale(1.5); Scales to 1.5x the original size.
+            <li><u><b>Non-Uniform Scaling</b></u>:-</li>
+            Scale an element differently along the X and Y axes.<br>
+            <u>Ex</u>:-transform: scale(2, 0.5); Doubles width, halves height.
+            <li><u><b>Scaling Origin</b></u>:-</li>
+            By default, scaling occurs from the element’s center. Use transform-origin to change the pivot point.<br>
+            <u>Ex</u>:-transform-origin: top left; transform: scale(1.5); Scales from the top-left corner.
+        </ol>
+        <li><b><u>translate</u></b>:-</li>
+        It is used to move an element from its current position along the X-axis (horizontal), Y-axis (vertical), or
+        both. Unlike positioning with top, left, etc., translate() does not affect the document flow, making it ideal
+        for animations and visual adjustments.
+        <ul type="disc">
+            <li>tx: Distance to move along the X-axis (horizontal). <br>-Positive values move the element to the right,
+                negative values to the left.</li>
+            <li>ty: (Optional) Distance to move along the Y-axis (vertical).If omitted, ty defaults to 0. <br>-Positive
+                values move the element down, negative values up.
+
+            </li>
+        </ul>
+        <ol>
+            <li><u><b>Basic Translation</b></u>:-</li>
+            Move an element horizontally and/or vertically <br>
+            <u>Ex</u>:- transform: translate(50px, 20px); Move 50px right, 20px down
+            <li><u><b>Single-Axis Translation</b></u>:-</li>
+            Use translateX() or translateY() for single-axis movement<br>
+            <u>Ex</u>:-[transform: translateX(50px); Move 50px right] [transform: translateY(-20px); Move 20px up ]
+        </ol>
+        <li><b><u>skew</u></b>:-</li>
+        It is part of the transform property and is used to distort an element by tilting it along the X-axis
+        (horizontal) and/or Y-axis (vertical). This creates a "skewed" or slanted effect, which can be useful for
+        creative designs and animations.
+        <ul type="disc">
+            <li>ax: Angle of skew along the X-axis (horizontal). <br>- positive values tilt the element to the left,
+                negative values to the right.</li>
+            <li>ay: (Optional) Angle of skew along the Y-axis (vertical).If omitted,
+                <br>-Positive values move the element down, negative values up.
+                <br> - ay defaults to 0.
+            </li>
+        </ul>
+        <ol>
+            <li><u><b>Basic Skew</b></u>:-</li>
+            Skew an element along the X-axis and/or Y-axis <br>
+            <u>Ex</u>:- transform: skew(20deg, 10deg); Skew 20° horizontally, 10° vertically
+            <li><u><b>Single-Axis Skew</b></u>:-</li>
+            Use skewX() or skewY() for single-axis skewing<br>
+            <u>Ex</u>:-[transform: skewX(20deg); Skew 20° horizontally] [transform: skewY(-10deg); Skew 10° vertically
+            (upward)
+        </ol>
+        <li><b><u>matrix</u></b>:-</li>
+        It is a 2D transformation function that allows you to apply a variety of transformations to an element, all
+        within a single function. It's a powerful tool, though it can be a bit complex to understand at first.
+        <ul type="disc">
+            <li>The matrix() function defines a 2D transformation matrix. This matrix essentially modifies the
+                coordinates of an element, resulting in transformations like:
+                <ul type="circle">
+                    <li>Translation (moving the element)</li>
+                    <li>Scaling (resizing the element)</li>
+                    <li>Rotation (turning the element)</li>
+                    <li>Skewing (distorting the element)</li>
+                </ul>
+            </li>
+            <li><b>Syntax</b>:-</li>
+            - The matrix() function takes six values representing a 2D transformation matrix: <br>
+            <b>Ex</b> [transform: matrix(a, b, c, d, e, f);] <br>
+            <ul type="circle">
+                <li><b>a</b> Horizontal scaling (scaleX).</li>
+                <li><b>b</b> Vertical skewing (skewY).</li>
+                <li><b>c</b> Horizontal skewing (skewX).</li>
+                <li><b>d</b> Vertical scaling (scaleY).</li>
+                <li><b>e</b> Horizontal translation (translateX).</li>
+                <li><b>f</b> Vertical translation (translateY).</li>
+            </ul>
+    </ol>
+    <hr>
 </body>
 </html>
