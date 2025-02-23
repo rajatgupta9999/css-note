@@ -1699,26 +1699,45 @@ Css Notes By Rajat Gupta
             </ul>
     </ol>
     <hr>
-                <h2>Animation</h2>
+               <h2>Animation</h2>
     CSS Animations allow you to create smooth, complex animations by defining keyframes and applying them to elements.
     Unlike transitions, animations can have multiple intermediate steps and can run automatically or be triggered by
-    events.
-    <ul>
-        <li><b>Steps </b>:-</li>
+    events. <br>
+    <ol>
+        <li>
+            <b><u>@keyframes</u></b>:- <br>
+            Firstly we have to write @keyframes and then write the name of the animation. and then we have to write the
+            animation star from to end.[Basically we have to write the animation Frames start frame or end frame]. <br>
+            <ul type="none">
+                <li><b>Syntax</b>:- @keyframe myName { <br>
+                    to { initial property : initial value ; } <br>
+                    from { end property : end frame ; } <br>
+                    }</li>
+                <li>
+                    <b>Ex</b>:- @keyframe animate font { <br>
+                    to { font-size : 20px; } <br>
+                    from { font-size : 40px; } <br>
+                    }
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b><u>percentage(%) in @keyframes animations</u></b>:- <br>
+            Percentages are used to define the intermediate steps (or keyframes) of an animation. Each percentage represents a specific point in time during the animation's duration, allowing you to control the element's state at that moment. <br>
+            <b>Syntax</b>:-
+            @keyframes animation-name { <br>
+                0% { /* Starting state */ } <br>
+                50% { /* Intermediate state */ } <br>
+                100% { /* Ending state */ } <br>
+              }
+        </li>
+        <li><b>Steps </b>:-
         <ol>
             <li><b><u>animation name</u></b>:-</li>
             -Specifies the name of the @keyframes animation to use.
             <br>
-            -The animation-name property in CSS specifies the name of the @keyframes animation to apply to an element.
-            It links the element to the animation defined in the @keyframes rule. <br>
-            <b>Syntax</b>:- @keyframe myName { <br>
-            to { initial property : initial value ; } <br>
-            from { end property : end frame ; } <br>
-            } <br>
-            <b>Ex</b>:- @keyframe animate font { <br>
-            to { font-size : 20px; } <br>
-            from { font-size : 40px; } <br>
-            }
+            -It links the element to the animation defined in the @keyframes rule. <br>
+            <b>Syntax</b>:- [animation-name: name of @keyframe;]
             <li><b><u>animation Duration</u></b>:-</li>
             Sets the length of time the animation takes to complete (e.g., 2s, 500ms). <br>
             <b>Ex</b>:- [animation-duration: 1s;] <br>
@@ -1730,9 +1749,17 @@ Css Notes By Rajat Gupta
             <li><b><u>animation-iteration-count</u></b>:-</li>Specifies how many times the animation should play (e.g.,
             infinite). <br>
             <b>Ex</b>:- [animation-iteration-count: infinite;]<br>
-            <li><b><u>animation-Direction</u></b>:-</li>Specifies how many times the animation should play (e.g.,
-            infinite). <br>
-            <b>Ex</b>:- [animation-iteration-count: infinite;]<br>
+            <li><b><u>animation-Direction</u></b>:-</li>
+            Specifies how many times the animation should play (e.g.,infinite). <br>
+            <ol>
+                <li><b><u>normal (default)</u></b>:-</li>The animation plays forward from 0% to 100%
+                <li><b><u>reverse</u></b>:-</li>The animation plays backward from 100% to 0%
+                <li><b><u>alternate</u></b>:-</li>The animation alternates between forward and backward on each
+                iteration.
+                <li><b><u>alternate-reverse</u></b>:-</li>
+                The animation alternates between backward and forward on each iteration. <br>
+            </ol>
+            <b>syntax</b>:- [animation-direction: normal | reverse | alternate | alternate-reverse;]<br>
             <li><b><u>animation-fill-mode</u></b>:-</li>Determines the styles applied before and after the animation
             (e.g., forwards, backwards,both).<br>
             <b>Ex</b>:- [animation-fill-mode: none;]<br>
@@ -1740,9 +1767,11 @@ Css Notes By Rajat Gupta
             <b>Ex</b>:- [animation-play-state: value;]<br>
         </ol>
         <h3>Animation Shorthand</h3>
-            animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state]; <br>
-            - <b>Example:</b>transition: font-size 2s ease-in-out 0.2s;</b>
-    </ul>
+        animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];
+        <br>
+        - <b>Example:</b>transition: font-size 2s ease-in-out 0.2s;</b>
+    </li>
+    </ol>
     <hr>
 </body>
 </html>
