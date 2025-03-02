@@ -1886,5 +1886,60 @@ Css Notes By Rajat Gupta
     </li>
     </ol>
     <hr>
+                <h2>Pseudo States</h2>
+    states refer to the different conditions or interactions an element can have, such as being hovered, focused, or
+    active. These states are targeted using pseudo-classes, which allow you to apply styles dynamically based on user
+    interaction or element state.
+    <ol>
+        <li>
+            <h3>Pseudo-Classes</h3>
+            A pseudo-class is used to define a special state of an element. <br>
+            - It allows you to apply styles to elements based on their state or behavior.
+            <ol>
+                <li><b>:hover</b>:-</li>
+                Applies styles when the user hovers over an element.
+                <li><b>:active</b>:-</li>Applies styles when the element is being activated (e.g., clicked).
+                <li><b>:focus</b>:-</li>Applies styles when the element gains focus (e.g., via keyboard navigation or
+                clicking).
+                <li><b>:visited</b>:-</li>Applies styles to visited links.
+                <li><b>:link</b>:-</li>Applies styles to unvisited links.
+                <li><b>:checked</b>:-</li>Applies styles to checked radio buttons or checkboxes.
+                <li><b>:disabled</b>:-</li>Applies styles to disabled form elements.
+                <li><b>:enabled</b>:-</li>Applies styles to enabled form elements.
+                <li><b>:first-child and :last-child</b>:-</li>Applies styles to the first or last child of a parent
+                element.
+                <li><b>:nth-child()</b>:-</li>Applies styles to elements based on their position in a group of siblings.
+                <br>
+                - Works on a (an+b) Formula to select tha child.
+                <li><b>:not()</b>:-</li>Applies styles to elements that do not match a selector.
+                <li><b>:empty</b>:-</li>Applies styles to elements with no children or content.
+                <li><b>:target</b>:-</li>Applies styles to the element targeted by a URL fragment.
+                <li><b>:valid and :invalid</b>:-</li>Applies styles to form elements based on validation.
+                <li><b>:required and :optional
+                    </b>:-</li>Applies styles to required or optional form elements.
+                <li><b>:read-only and :read-write</b>:-</li>Applies styles to read-only or editable elements.
+                <li><b>:in-range and :out-of-range</b>:-</li>Applies styles to input elements with values within or
+                outside a specified range.
+                <li><b>:focus-within</b>:-</li>Applies styles to an element if any of its descendants are focused.
+                <li><b>:focus-visible</b>:-</li>Applies styles to an element when it is focused via keyboard navigation.
+                <li><b>:placeholder-shown
+                    </b>:-</li>Applies styles to an input element when its placeholder text is visible.
+            </ol>
+        </li>
+        <li>
+            <h3>Pseudo-Elements </h3>
+            A CSS pseudo-element is used to style specified parts of an element.
+            <ol>
+                <li><b>::before</b></li>Inserts content before the element's content.
+                <li><b>::after</b></li>Inserts content after the element's content.
+                <li><b>::first-letter</b></li>Styles the first letter of the element's content.
+                <li><b>::first-line</b></li>Styles the first line of the element's content.
+                <li><b>::selection</b></li>Styles the portion of the element that is selected by the user.
+                <li><b>::placeholder</b></li>Styles the placeholder text in input elements.
+                <li><b>::marker</b></li>Styles the marker of list items (e.g., bullets or numbers).
+            </ol>
+        </li>
+    </ol>
+                <hr>
 </body>
 </html>
