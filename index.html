@@ -1940,6 +1940,104 @@ Css Notes By Rajat Gupta
             </ol>
         </li>
     </ol>
-                <hr>
+    <hr>
+                <h2>CSS Gradients </h2>
+  CSS Gradients allow you to create smooth transitions between two or more colors. They are commonly used for
+  backgrounds, buttons, and other design elements. CSS supports three types of gradients: linear gradients and radial
+  gradients.
+  <ol>
+    <li><b>Linear Gradients</b>:-</li>
+    Creates a gradient that transitions colors along a straight line. <br>
+    <b>Syntax:</b> background: linear-gradient (direction, color-stop1, color-stop2, ...);
+    <ol>
+      <li><u><b>Top to Bottom (default)</b></u>:-</li>
+      - The gradient Direction is runs from top to bottom. <br>
+      <li><u><b>Left to Right:</b></u>:-</li>
+      - The gradient Direction is runs from left to right. <br>
+      <li><u><b> Diagonal</b></u>:-</li>
+      - The gradient Direction is runs from top left to bottom right. <br>
+      <li><u><b>Angled Gradient</b></u>:-</li>
+      - The gradient Direction is runs at an angle(Deg).<br>
+    </ol>
+    <li><b>Radial Gradients</b>:-</li>
+    Colors radiate from a central point. <br>
+    <b>Syntax:</b> background: radial-gradient(shape/size at position, color-stop1, color-stop2, ...);
+    <ol>
+      <li><u><b>Default Radial Gradient</b></u></li>
+      - The gradient radiates from the center of the element. <br>
+      <li><u><b>Circle</b></u>:-</li>
+      - Form a circle shape gradient <br>
+      <li><u><b> Ellipse</b></u>:-</li>
+      - Form an ellipse shape gradient <br>
+      <li><u><b>Positioned Gradient</b></u></li>
+      - The gradient radiates from a specific position. <br>
+    </ol>
+    <li><b>Conical Gradients</b>:-</li>
+    - Colors transition around a center point in a circular pattern. <br>
+    <b>Syntax:</b> background: conic-gradient(from angle at position, color-stop1, color-stop2, ...); 
+    <ol>
+      <li><u><b>Basic Conic Gradient:</b></u></li>
+      - The gradient radiates from the center of the element. <br>
+      <li><u><b>With Color Stops:</b></u>:-</li>
+      - The gradient radiates from the center of the element with color stops. <br>
+      <li><u><b> Angled Conic Gradient:</b></u>:-</li>
+      - The gradient radiates from a specific angle. <br>
+      <li><u><b>Pie Chart Effect:</b></u></li>
+      - The gradient radiates from the center of the element with a pie chart effect. <br>
+    </ol>
+    <li><b>Repeating Gradients</b>:-</li>
+    - Repeats a gradient pattern. 
+    <ol>
+      <li><u><b>Repeating Linear Gradient:</b></u>:-</li>
+      - Repeats a linear gradient pattern. <br>
+      <li><u><b>Repeating Radial Gradient:</b></u>:-</li>
+      - Repeats a radial gradient pattern. <br>
+    </ol>
+  </ol>
+  <hr>
+                <h2>CSS Variable</h2>
+    CSS Variables (also known as Custom Properties) allow you to define reusable values in your stylesheet, making it
+    easier to maintain consistent designs and update styles globally. They are especially useful for themes, colors,
+    spacing, and other repeated values.
+    <ol>
+        <li><b>Global Variables</b>:- Global variables are defined in the :root selector and apply to all elements on
+            the page.</li>
+
+        <ul type="none">
+            <li> <b>Syntax:-</b></li>
+            <ol>
+                <li><b>Declaring CSS Variables</b>:- Define variables using the <b> -- </b>prefix, typically in the
+                    :root selector (global scope) or within specific selectors (local scope).</li>
+                [<b>:root {
+                    --variable-name: value;
+                    } </b>] <br>
+                <b>Local Variable</b>:- We can also use local variables within specific selectors using the <b>[ --
+                    ]</b> prefix. <br>
+                - The benifit of using it is we can give both local varible and any value which is used when local
+                variable is not working properly <br> <br>
+                <li><b>Using CSS Variables</b>:- Use variables in your styles by referencing them using the <b> var()
+                    </b>function.</li>
+                [<b>selector {
+                    property: var(--variable-name, fallback-value);
+                    }</b>]
+            </ol>
+        </ul>
+        <li><b>Environment variable</b>:- Environment variable  useful for handling device-specific layouts, such as safe area insets for notches or rounded corners. <br>
+        - Environment variables are defined using the <b>env()</b> function.</li>
+        <ul type="none">
+            <li> <b>Syntax:-</b></li>
+            <ol>
+                <li><b>Declaring Emvironment Variables</b>:-property: env(variable-name, fallback-value);</li>
+                <li><b>Common Environmental Variables</b></li>
+                <ul type="disc">
+                    <li><b>safe-area-inset-top</b>:- Space from the top of the viewport to the safe area.</li>
+                    <li><b>safe-area-inset-right</b>:- Space from the right of the viewport to the safe area.</li>
+                    <li><b>safe-area-inset-bottom:</b>:- Space from the bottom of the viewport to the safe area.</li>
+                    <li><b>safe-area-inset-left</b>:- Space from the left of the viewport to the safe area.</li>
+                </ul>
+            </ol>
+        </ul>
+    </ol>
+    <hr>
 </body>
 </html>
