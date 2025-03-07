@@ -2179,5 +2179,19 @@ Css Notes By Rajat Gupta
         </ol>
     </ul>
     <hr>
+                <h2>table-layout</h2>
+    The table-layout property in CSS controls how a table's cells, rows, and columns are laid out. It determines the algorithm used to calculate the width of table cells and columns. There are two main values for this property: auto and fixed <br>
+    <ol>
+        <li><b>auto (default)</b>:-</li>
+        The table layout is determined by the content of the cells. <br>
+        Column widths are calculated based on the widest content in each column. <br>
+        This can cause the table to resize dynamically as content changes. <br>
+        <li><b>fixed</b>:-</li>
+        - The table layout is determined by the table's width and the width of its columns. <br>
+        - Column widths are set by the width property of the <col> elements or the first row of cells. <br>
+        - If no width is specified, columns are distributed evenly. <br>
+        - This can improve performance for large tables because the browser doesn't need to calculate cell widths based on content. <br>
+    </ol>
+    <hr>
 </body>
 </html>
