@@ -2089,5 +2089,95 @@ Css Notes By Rajat Gupta
         </ol>
     </ul>
     <hr>
+                <h2>Css filters</h2>
+    Css filter provides several filter functions that can be combined to create complex visual effects.
+    <ol>
+        <li><b>blur()</b>:-</li>
+        Applies a Gaussian blur to the element. <br>
+        <b>Syntax</b>:- blur(radius)
+        <li><b>brightness()</b>:-</li>
+        Adjusts the brightness of the element. <br>
+        <b>Syntax</b>:- brightness(amount)
+        <li><b>contrast()</b>:-</li>
+        Adjusts the contrast of the element. <br>
+        <b>Syntax</b>:- contrast(amount)
+        <li><b>grayscale()</b>:-</li>
+        Converts the element to grayscale. <br>
+        <b>Syntax</b>:- grayscale(amount)
+        <li><b>sepia()</b>:-</li>
+        Applies a sepia tone to the element. <br>
+        <b>Syntax</b>:- sepia(amount)
+        <li><b>saturate()</b>:-</li>
+        Adjusts the saturation of the element. <br>
+        <b>Syntax</b>:- saturate(amount)
+        <li><b>hue-rotate()</b>:-</li>
+        Rotates the hue of the element's colors. <br>
+        <b>Syntax</b>:- hue-rotate(angle)
+        <li><b>invert()</b>:-</li>
+        Inverts the colors of the element. <br>
+        <b>Syntax</b>:- invert(amount)
+        <li><b>opacity()</b>:-</li>
+        Adjusts the transparency of the element <br>
+        <b>Syntax</b>:- opacity(amount)
+        <li><b>drop-shadow()</b>:-</li>
+        Applies a drop shadow to the element. <br>
+        <b>Syntax</b>:- drop-shadow(offset-x offset-y blur-radius color)
+    </ol>
+    <hr>
+    <h2>object-position and object-fit Properties</h2>
+    <ol>
+        <li>
+            <h3>object-positon</h3>
+        </li>
+        - The object-fit property defines how the content of a replaced element (like an image or video) should be
+        resized to fit its container.
+        <ul type="none">
+            <li><b>Value</b>:-</li>
+            <ol>
+                <li><b>fill (default)</b>:- The content is stretched to fill the container, ignoring the aspect ratio.
+                </li>
+                <li><b>contain</b>:- The content is scaled to fit within the container while maintaining its aspect
+                    ratio. <br>
+                    - The entire content is visible, but there may be empty space (letterboxing) in the container.
+                </li>
+                <li><b>cover</b>:-The content is scaled to cover the entire container while maintaining its aspect
+                    ratio. <br>
+                    - Some parts of the content may be clipped if the aspect ratio of the container and content differ.
+                </li>
+                <li><b>none</b>:-The content retains its original size and is not resized. <br>
+                    - It may overflow or underfill the container.
+                </li>
+                <li><b>scale-down</b>:-The content is scaled to the smaller of none or contain <br>
+                    - It behaves like none if the content is smaller than the container, or like contain if the content
+                    is larger.
+                </li>
+            </ol>
+        </ul>
+        <h3>object-position</h3>
+        The object-position property defines the alignment of the content within its container. It works in conjunction with object-fit to control the positioning of the content.  <br>
+        <b>Syntax:-</b> object-position: horizontal-position vertical-position;
+        <ol>
+            <li><b>horizontal-position</b>:- Can be a percentage, length (e.g., 10px), or keyword (left, center, right)</li>
+            <li><b>vertical-position</b>:- Can be a percentage, length (e.g., 10px), or keyword (top, center, bottom) </li>
+        </ol>
+        
+    </ol>
+    <hr>
+    <h2>css counter</h2>
+    - CSS counters are a powerful feature that allow you to automatically number elements or create custom counters for lists, headings, or other elements. They are particularly useful for creating numbered lists, step-by-step instructions, or custom numbering systems without relying on JavaScript or manual numbering.
+    <ul type=" none">
+        <li><b>How CSS Counters Work</b>:-</li>
+        <ol>
+            <li><b>counter-reset</b>:- Initializes or resets a counter. <br>
+                <b>Syntax:-</b> counter-reset: counter-name initial-value;</li>
+            <li><b>counter-increment</b>:- Increments a counter <br>
+                <b>Syntax:-</b> counter-increment: counter-name increment-value;</li>
+            <li><b>counter() or counters()</b>:- Displays the current value of a counter. <br>
+                <b>Syntax:-</b> counter(counter-name, counter-style); <br>
+                <b>Syntax:-</b> counters(counter-name, separator, counter-style);
+            </li>
+        </ol>
+    </ul>
+    <hr>
 </body>
 </html>
