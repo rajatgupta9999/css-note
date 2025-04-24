@@ -2193,5 +2193,62 @@ Css Notes By Rajat Gupta
         - This can improve performance for large tables because the browser doesn't need to calculate cell widths based on content. <br>
     </ol>
     <hr>
+                <h2>Window object</h2>
+    <ul>
+        <li>The window object in js represents the browser window and provides methods and properties to interact with
+            the browser. it is the global object in client-side js.</li>
+        <li> Meaning all global variable and function are properties of the window object.</li>
+        <li>It is a global object with lots of properties & methods.</li>
+        <li>Since the window object is the global,you can omit window and directly use "alert()","confirm()".</li>
+    </ul>
+    <h2>Dom (Document Object Model)</h2>
+    - The Document object Model (DOM) in js is a programming interface that represents the structure of an HTML or XML
+    document as a tree of object. it allow js to dynamically interact with and manipulate the content,structure ,and
+    style of a web page. <br>
+    - In dom we have 3 Main Nodes.
+    <ol>
+        <li>Text Node</li>
+        <li>Comment Node</li>
+        <li>Element Nodes:- In Dom we can always work in element node.just ignore text and comment node.(But read Mdn
+            Docs for it).</li>
+    </ol>
+    <ul>
+        <b>DOM:-</b>
+        <li>The Dom is a tree-like representation of a web page,where each HTML element as a node.</li> <br>
+        <li>IT created by the browser when a page loads and is updated dynamically as the page changes.</li> <br>
+        <li>Javascript can access and modify the DOM to create interact experiences.</li>
+    </ul>
+    <h3>Dom Manipulation</h3>
+    <ol>
+        <li><b>Selecting Elements By Id</b>:- Selects an elements by its Id.</li>
+        <b>Syntax:-</b>document.getElementBy("Id");
+        <li><b>Selecting Elements By Class</b>:- Selects element by class name.</li>
+        <b>Syntax:-</b>document.getElementBy("Class");
+        <li><b>Selecting Elements By Tag</b>:- Selects element by tag name.</li>
+        <b>Syntax:-</b>document.getElementByTagName("tag");
+        <li><b>Selecting Elements By query selector</b>:-selects the first element matching a css selector.</li>
+        <b>Syntax:-</b>document.queryselector("selector");
+        <li><b>Selecting Elements By query selectorALL</b>:- selects the all element matching a css selector.</li>
+        <b>Syntax:-</b>document.queryselectorAll("selector");
+    </ol>
+    <h3>Dom Properties</h3>
+    - We can access element by dom manipulation.after access the element we can change/check its value by Dom properties. <br>
+    <ol>
+        <li><b>tagName</b>:- returns tag for element nodes. <br>
+            <b>Syntax:-</b>element.tagName
+        </li>
+        <li><b>innerText</b>:-returns the text content of the element and all its children and returns a string. <br>
+            <b>Syntax:-</b>element.innerText
+        </li>
+        <li><b>innerHTML</b>:-returns the plain text with the html content in the element.basically it returns full HTML
+            code. <br>
+            <b>Syntax:-</b>element.innerHTML
+        </li>
+        <li><b>textContent</b>:- returns textual content even for hidden element. <br>
+            <b>Syntax:-</b>element.textContent.
+        </li>
+    </ol>
+    - we can also change the element value in a runtime like - element.innerText="New Text"; it will replace the HTML content in a runtime.
+    <hr>
 </body>
 </html>
